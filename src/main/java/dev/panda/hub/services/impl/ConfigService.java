@@ -96,6 +96,8 @@ public class ConfigService extends Service {
     public static boolean ENABLE_PICKUP_ITEM_MESSAGE;
     public static boolean ENABLE_PVP_MESSAGE;
 
+    public static List<String> LUNAR_LINES;
+
     @Override
     public void initialize() {
         DISCORD = configFile.getString("DISCORD");
@@ -189,5 +191,7 @@ public class ConfigService extends Service {
         ENABLE_DROP_ITEM_MESSAGE = configFile.getBoolean("ENABLE_DROP_ITEM_MESSAGE");
         ENABLE_PICKUP_ITEM_MESSAGE = configFile.getBoolean("ENABLE_PICKUP_ITEM_MESSAGE");
         ENABLE_PVP_MESSAGE = configFile.getBoolean("ENABLE_PVP_MESSAGE");
+
+        LUNAR_LINES = configFile.getStringList("LUNAR_TAG.LINES");
     }
 }

@@ -138,6 +138,11 @@ PLAYER_JOIN:
     ENABLE: true
     LEVEL: 2025
 
+# PlaceholderAPI placeholders are supported
+LUNAR_TAG:
+  LINES:
+    - "<player>"
+
 # BOOLEANS CONFIGURATION
 DISABLE_BLOCK_BREAK: true
 DISABLE_BLOCK_PLACE: true

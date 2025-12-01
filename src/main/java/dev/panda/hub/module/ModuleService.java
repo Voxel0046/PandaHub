@@ -1,6 +1,7 @@
 package dev.panda.hub.module;
 
 import dev.panda.hub.module.impl.*;
+import dev.panda.hub.providers.nametag.ApolloTask;
 import dev.panda.hub.providers.scoreboard.ScoreboardHook;
 import dev.panda.hub.PandaHub;
 import dev.panda.hub.hooks.PlaceholderAPIHook;
@@ -37,6 +38,9 @@ public class ModuleService {
         PlaceholderAPIHook.init();
         ScoreboardHook.init(plugin);
         TablistHook.init(plugin);
+
+        // i'll jus put this here
+        new ApolloTask().runTaskTimerAsynchronously(PandaHub.get(), 0L, 10L);
 
         Bukkit.getMessenger().registerOutgoingPluginChannel(plugin, "BungeeCord");
     }

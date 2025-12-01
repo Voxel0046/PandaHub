@@ -52,6 +52,10 @@
             <id>ajRepo</id>
             <url>https://repo.ajg0702.us/releases</url>
         </repository>
+        <repository>
+            <id>lunarclient</id>
+            <url>https://repo.lunarclient.dev</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -167,6 +171,26 @@
             <artifactId>api</artifactId>
             <version>LATEST</version>
             <scope>provided</scope>
+        </dependency>
+        <!--  Apollo API  -->
+        <dependency>
+            <groupId>com.lunarclient</groupId>
+            <artifactId>apollo-api</artifactId>
+            <version>1.2.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <!--  Adventure  -->
+        <dependency>
+            <groupId>net.kyori</groupId>
+            <artifactId>adventure-api</artifactId>
+            <version>4.21.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.kyori</groupId>
+            <artifactId>adventure-platform-bukkit</artifactId>
+            <version>4.4.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>
