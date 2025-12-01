@@ -1,0 +1,156 @@
+# NETWORK CONFIGURATION
+DISCORD: "discord.gg/aero"
+STORE: "store.aero.gg"
+TEAMSPEAK: "ts.aero.gg"
+TWITTER: "@AeroNetwork"
+WEBSITE: "www.aero.gg"
+
+# TIME CONFIGURATION
+TIME:
+  ZONE: "America/Santiago"
+  DATE: "dd/MM/yyyy"
+  HOUR: "HH:mm:ss"
+
+# WORLD BORDER CONFIGURATION
+WORLD_BORDER: 300
+
+# HIDE AND SHOW CONFIGURATION
+HIDE_AND_SHOW:
+  COOLDOWN:
+    ENABLE: false
+    TIME: 5 # IN SECONDS
+    MESSAGE: "&cPlease wait %TIME% seconds before toggleing player visibility again."
+
+# MENUS CONFIGURATION
+MENU:
+  FILL_BUTTON:
+    ENABLE: true
+    ICON:
+      DISPLAYNAME: " "
+      DESCRIPTION: {}
+      MATERIAL: "STAINED_GLASS_PANE"
+      DATA: 15
+  BACK_BUTTON:
+    ENABLE: true
+    ICON:
+      DISPLAYNAME: "&c&lGo Back"
+      DESCRIPTION:
+        - "&cClick here to return"
+        - "&cto the previous menu."
+      MATERIAL: "BED"
+      DATA: 0
+
+# ANNOUNCEMENT CONFIGURATION
+ANNOUNCEMENT:
+  ENABLE: true
+  INTERVAL: 5 # IN MINUTES
+  MESSAGES:
+    "1":
+      - ""
+      - " &7[&9&lTIP&7] &fChat with others, join giveaways"
+      - " &fat our Discord! &9&ndiscord.gg/aero"
+      - ""
+
+# DOUBLE JUMP CONFIGURATION
+DOUBLE_JUMP:
+  ENABLE: true
+  EFFECT: "FLAME"
+  SOUND: "BAT_TAKEOFF"
+  VELOCITY: 1.5 # LIMIT 4.0
+
+# ENDER BUTT CONFIGURATION
+ENDER_BUTT:
+  RIDE: false
+  SOUND: "ORB_PICKUP"
+  VELOCITY: 2.0
+
+# DISABLED COMMANDS CONFIGURATION
+DISABLE_COMMAND:
+  COMMANDS:
+    - "example"
+
+# BLOCK COMMANDS CONFIGURATION
+BLOCK_COMMAND:
+  ENABLE: true
+  MESSAGE: '&fUnknown command. Type "/help" for help.'
+  COMMANDS:
+    - "/pl"
+
+# DENY BLOCKS INTERACT CONFIGURATION
+DENY_BLOCKS_INTERACT:
+  - "CHEST"
+  - "TRAPPED_CHEST"
+  - "ANVIL"
+  - "FURNACE"
+  - "HOPPER"
+
+# ALLOW BLOCKS INTERACT CONFIGURATION
+ALLOW_BLOCKS_INTERACT: {}
+
+# CUSTOM CHAT CONFIGURATION
+CUSTOM_CHAT:
+  ENABLE: true
+  FORMAT: "%RANK_PREFIX%%PLAYER%&7: %CHAT_COLOR%%MESSAGE%"
+
+# CUSTOM MESSAGE/REPLY CONFIGURATION
+CUSTOM_MESSAGE:
+  ENABLE: true
+  FORMAT:
+    TO: "%MESSAGE_COLOR%(To %RANK_PREFIX%%TARGET%%MESSAGE_COLOR%) %MESSAGE%"
+    FROM: "%MESSAGE_COLOR%(From %RANK_PREFIX%%PLAYER%%MESSAGE_COLOR%) %MESSAGE%"
+
+# CUSTOM JOIN CONFIGURATION
+CUSTOM_JOIN:
+  ENABLE: false
+  PERMISSION: "hub.vip"
+  MESSAGE:
+    JOIN: "&e%RANK_PREFIX%%PLAYER% &9has joined the server."
+    QUIT: "&e%RANK_PREFIX%%PLAYER% &9has left the server."
+
+# PLAYER JOIN CONFIGURATION
+PLAYER_JOIN:
+  SOUND:
+    ENABLE: true
+    TYPE: "CAT_MEOW"
+  SPEED:
+    ENABLE: true
+    VALUE: 0.5
+  MESSAGE:
+    ENABLE: true
+    CLEAR: true
+    MESSAGE:
+      - " "
+      - " &9&lAero Network"
+      - " &7Welcome %PLAYER%&7."
+      - ""
+      - " &9&lSocials"
+      - " &9┃ &fDiscord: &9%DISCORD%"
+      - " &9┃ &fStore: &9%STORE%"
+      - " &9┃ &fTeamspeak: &9%TEAMSPEAK%"
+      - " &9┃ &fTwitter: &9%TWITTER%"
+      - " &9┃ &fWebsite: &9%WEBSITE%"
+      - ""
+  TITLE:
+    ENABLE: true
+    TITLE: "&9&lAero Network"
+    SUBTITLE: "&7Welcome %PLAYER%&7."
+  XP_LEVEL:
+    ENABLE: true
+    LEVEL: 2025
+
+# BOOLEANS CONFIGURATION
+DISABLE_BLOCK_BREAK: true
+DISABLE_BLOCK_PLACE: true
+DISABLE_DROP_ITEM: true
+DISABLE_PICKUP_ITEM: true
+DISABLE_PVP: true
+DISABLE_CHAT: false
+DISABLE_PLAYER_SEE_IN_HUB: false
+DISABLE_WORLD_BORDER: false
+DISABLE_CLEAR_HOTBAR: false
+
+ENABLE_BLOCK_BREAK_MESSAGE: false
+ENABLE_BLOCK_PLACE_MESSAGE: false
+ENABLE_DROP_ITEM_MESSAGE: false
+ENABLE_PICKUP_ITEM_MESSAGE: false
+ENABLE_PVP_MESSAGE: false

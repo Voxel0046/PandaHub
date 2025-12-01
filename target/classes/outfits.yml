@@ -1,0 +1,205 @@
+OUTFITS:
+  Green:
+    HELMET:
+      NAME: "&a&lGreen Helmet"
+      MATERIAL: "LEATHER_HELMET:0"
+      COLOR: "12:255:0"
+    CHESTPLATE:
+      NAME: "&a&lGreen Chestplate"
+      MATERIAL: "LEATHER_CHESTPLATE:0"
+      COLOR: "12:255:0"
+    LEGGINGS:
+      NAME: "&a&lGreen Leggings"
+      MATERIAL: "LEATHER_LEGGINGS:0"
+      COLOR: "12:255:0"
+    BOOTS:
+      NAME: "&a&lGreen Boots"
+      MATERIAL: "LEATHER_BOOTS:0"
+      COLOR: "12:255:0"
+  Yellow:
+    HELMET:
+      NAME: "&e&lYellow Helmet"
+      MATERIAL: "LEATHER_HELMET:0"
+      COLOR: "247:255:0"
+    CHESTPLATE:
+      NAME: "&e&lYellow Chestplate"
+      MATERIAL: "LEATHER_CHESTPLATE:0"
+      COLOR: "247:255:0"
+    LEGGINGS:
+      NAME: "&e&lYellow Leggings"
+      MATERIAL: "LEATHER_LEGGINGS:0"
+      COLOR: "247:255:0"
+    BOOTS:
+      NAME: "&e&lYellow Boots"
+      MATERIAL: "LEATHER_BOOTS:0"
+      COLOR: "247:255:0"
+  Blue:
+    HELMET:
+      NAME: "&3&lBlue Helmet"
+      MATERIAL: "LEATHER_HELMET:0"
+      COLOR: "26:199:229"
+    CHESTPLATE:
+      NAME: "&3&lBlue Chestplate"
+      MATERIAL: "LEATHER_CHESTPLATE:0"
+      COLOR: "26:199:229"
+    LEGGINGS:
+      NAME: "&3&lBlue Leggings"
+      MATERIAL: "LEATHER_LEGGINGS:0"
+      COLOR: "26:199:229"
+    BOOTS:
+      NAME: "&3&lBlue Boots"
+      MATERIAL: "LEATHER_BOOTS:0"
+      COLOR: "26:199:229"
+  Pink:
+    HELMET:
+      NAME: "&d&lPink Helmet"
+      MATERIAL: "LEATHER_HELMET:0"
+      COLOR: "232:0:255"
+    CHESTPLATE:
+      NAME: "&d&lPink Chestplate"
+      MATERIAL: "LEATHER_CHESTPLATE:0"
+      COLOR: "232:0:255"
+    LEGGINGS:
+      NAME: "&d&lPink Leggings"
+      MATERIAL: "LEATHER_LEGGINGS:0"
+      COLOR: "232:0:255"
+    BOOTS:
+      NAME: "&d&lPink Boots"
+      MATERIAL: "LEATHER_BOOTS:0"
+      COLOR: "232:0:255"
+  Orange:
+    HELMET:
+      NAME: "&6&lOrange Helmet"
+      MATERIAL: "LEATHER_HELMET:0"
+      COLOR: "255:178:0"
+    CHESTPLATE:
+      NAME: "&6&lOrange Chestplate"
+      MATERIAL: "LEATHER_CHESTPLATE:0"
+      COLOR: "255:178:0"
+    LEGGINGS:
+      NAME: "&6&lOrange Leggings"
+      MATERIAL: "LEATHER_LEGGINGS:0"
+      COLOR: "255:178:0"
+    BOOTS:
+      NAME: "&6&lOrange Boots"
+      MATERIAL: "LEATHER_BOOTS:0"
+      COLOR: "255:178:0"
+  DarkBlue:
+    HELMET:
+      NAME: "&1&lDark Blue Helmet"
+      MATERIAL: "LEATHER_HELMET:0"
+      COLOR: "0:4:255"
+    CHESTPLATE:
+      NAME: "&1&lDark Blue Chestplate"
+      MATERIAL: "LEATHER_CHESTPLATE:0"
+      COLOR: "0:4:255"
+    LEGGINGS:
+      NAME: "&1&lDark Blue Leggings"
+      MATERIAL: "LEATHER_LEGGINGS:0"
+      COLOR: "0:4:255"
+    BOOTS:
+      NAME: "&1&lDark Blue Boots"
+      MATERIAL: "LEATHER_BOOTS:0"
+      COLOR: "0:4:255"
+  Purple:
+    HELMET:
+      NAME: "&5&lPurple Helmet"
+      MATERIAL: "LEATHER_HELMET:0"
+      COLOR: "255:0:116"
+    CHESTPLATE:
+      NAME: "&5&lPurple Chestplate"
+      MATERIAL: "LEATHER_CHESTPLATE:0"
+      COLOR: "255:0:116"
+    LEGGINGS:
+      NAME: "&5&lPurple Leggings"
+      MATERIAL: "LEATHER_LEGGINGS:0"
+      COLOR: "255:0:116"
+    BOOTS:
+      NAME: "&5&lPurple Boots"
+      MATERIAL: "LEATHER_BOOTS:0"
+      COLOR: "255:0:116"
+  Black:
+    HELMET:
+      NAME: "&0&lBlack Helmet"
+      MATERIAL: "LEATHER_HELMET:0"
+      COLOR: "0:0:0"
+    CHESTPLATE:
+      NAME: "&0&lBlack Chestplate"
+      MATERIAL: "LEATHER_CHESTPLATE:0"
+      COLOR: "0:0:0"
+    LEGGINGS:
+      NAME: "&0&lBlack Leggings"
+      MATERIAL: "LEATHER_LEGGINGS:0"
+      COLOR: "0:0:0"
+    BOOTS:
+      NAME: "&0&lBlack Boots"
+      MATERIAL: "LEATHER_BOOTS:0"
+      COLOR: "0:0:0"
+  Gray:
+    HELMET:
+      NAME: "&7&lGray Helmet"
+      MATERIAL: "LEATHER_HELMET:0"
+      COLOR: "161:161:161"
+    CHESTPLATE:
+      NAME: "&7&lGray Chestplate"
+      MATERIAL: "LEATHER_CHESTPLATE:0"
+      COLOR: "161:161:161"
+    LEGGINGS:
+      NAME: "&7&lGray Leggings"
+      MATERIAL: "LEATHER_LEGGINGS:0"
+      COLOR: "161:161:161"
+    BOOTS:
+      NAME: "&7&lGray Boots"
+      MATERIAL: "LEATHER_BOOTS:0"
+      COLOR: "161:161:161"
+  DarkGreen:
+    HELMET:
+      NAME: "&2&lDark Green Helmet"
+      MATERIAL: "LEATHER_HELMET:0"
+      COLOR: "23:126:31"
+    CHESTPLATE:
+      NAME: "&2&lDark Green Chestplate"
+      MATERIAL: "LEATHER_CHESTPLATE:0"
+      COLOR: "23:126:31"
+    LEGGINGS:
+      NAME: "&2&lDark Green Leggings"
+      MATERIAL: "LEATHER_LEGGINGS:0"
+      COLOR: "23:126:31"
+    BOOTS:
+      NAME: "&2&lDark Green Boots"
+      MATERIAL: "LEATHER_BOOTS:0"
+      COLOR: "23:126:31"
+  Red:
+    HELMET:
+      NAME: "&c&lRed Helmet"
+      MATERIAL: "LEATHER_HELMET:0"
+      COLOR: "255:0:0"
+    CHESTPLATE:
+      NAME: "&c&lRed Chestplate"
+      MATERIAL: "LEATHER_CHESTPLATE:0"
+      COLOR: "255:0:0"
+    LEGGINGS:
+      NAME: "&c&lRed Leggings"
+      MATERIAL: "LEATHER_LEGGINGS:0"
+      COLOR: "255:0:0"
+    BOOTS:
+      NAME: "&c&lRed Boots"
+      MATERIAL: "LEATHER_BOOTS:0"
+      COLOR: "255:0:0"
+  Rainbow:
+    HELMET:
+      NAME: "&d&lRainbow Helmet"
+      MATERIAL: "LEATHER_HELMET:0"
+      COLOR: "208:70:218"
+    CHESTPLATE:
+      NAME: "&d&lRainbow Chestplate"
+      MATERIAL: "LEATHER_CHESTPLATE:0"
+      COLOR: "208:70:218"
+    LEGGINGS:
+      NAME: "&d&lRainbow Leggings"
+      MATERIAL: "LEATHER_LEGGINGS:0"
+      COLOR: "208:70:218"
+    BOOTS:
+      NAME: "&d&lRainbow Boots"
+      MATERIAL: "LEATHER_BOOTS:0"
+      COLOR: "208:70:218"

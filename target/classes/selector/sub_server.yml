@@ -1,0 +1,71 @@
+SUB_SERVER_SELECTOR:
+  TITLE: "%SERVER% Regions"
+  SIZE: 3
+  SERVERS:
+    Practice:
+      practice-eu:
+        ICON:
+          HEAD:
+            ENABLE: true
+            PLAYER: ""
+            CUSTOM: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWU3ODk5YjQ4MDY4NTg2OTdlMjgzZjA4NGQ5MTczZmU0ODc4ODY0NTM3NzQ2MjZiMjRiZDhjZmVjYzc3YjNmIn19fQ=="
+          ENCHANTED: true
+          DISPLAYNAME: "&9&lEurope"
+          DESCRIPTION:
+            - "&71v1's, events, parties.."
+            - ""
+            - "&fOnline: &9%bungee_practice-eu%/1,000"
+            - "&fStatus: &9%pinger_isonline_localhost:25568%"
+            - " "
+            - "&aClick to join."
+          MATERIAL: "SKULL_ITEM"
+          DATA: 0
+          SLOT: 11
+        PERMISSION: ""
+        SUB_SERVER: "practice-eu"
+        QUEUE: true
+        COMMANDS: {}
+      practice-na:
+        ICON:
+          HEAD:
+            ENABLE: true
+            PLAYER: ""
+            CUSTOM: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNhYzk3NzRkYTEyMTcyNDg1MzJjZTE0N2Y3ODMxZjY3YTEyZmRjY2ExY2YwY2I0YjM4NDhkZTZiYzk0YjQifX19"
+          ENCHANTED: true
+          DISPLAYNAME: "&9&lNorth America"
+          DESCRIPTION:
+            - "&71v1's, events, parties.."
+            - ""
+            - "&fOnline: &9%bungee_practice-eu%/1,000"
+            - "&fStatus: &9%pinger_isonline_localhost:25568%"
+            - " "
+            - "&aClick to join."
+          MATERIAL: "SKULL_ITEM"
+          DATA: 0
+          SLOT: 13
+        PERMISSION: ""
+        SUB_SERVER: "practice-na"
+        QUEUE: true
+        COMMANDS: {}
+      practice-as:
+        ICON:
+          HEAD:
+            ENABLE: true
+            PLAYER: ""
+            CUSTOM: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGI1ZWQxMWY3OTdmM2ZjNjFlYWY4ZGFmYjZiZjMyMzRkMzFiOTZhYjc1OTZiZDJkZjcyMmQyZWYzNDczYzI3In19fQ=="
+          ENCHANTED: true
+          DISPLAYNAME: "&9&lAsia"
+          DESCRIPTION:
+            - "&71v1's, events, parties.."
+            - ""
+            - "&fOnline: &9%bungee_practice-eu%/1,000"
+            - "&fStatus: &9%pinger_isonline_localhost:25568%"
+            - " "
+            - "&aClick to join."
+          MATERIAL: "SKULL_ITEM"
+          DATA: 0
+          SLOT: 15
+        PERMISSION: ""
+        SUB_SERVER: "practice-as"
+        QUEUE: true
+        COMMANDS: {}

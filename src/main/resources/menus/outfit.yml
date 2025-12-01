@@ -1,0 +1,50 @@
+OUTFITS:
+  TITLE: "Select Outfit"
+
+OUTFIT_HELMET:
+  TITLE: "Select Helmet"
+
+OUTFIT_CHESTPLATE:
+  TITLE: "Select Chestplate"
+
+OUTFIT_LEGGINGS:
+  TITLE: "Select Leggings"
+
+OUTFIT_BOOTS:
+  TITLE: "Select Boots"
+
+OUTFIT_EDITOR:
+  TITLE: "Outfit Editor"
+
+BUTTONS:
+  OUTFITS:
+    ICON:
+      DISPLAYNAME: "&9&lOutfits"
+      DESCRIPTION:
+        - "&7Pre-made gears."
+        - " "
+        - "&aClick to browse."
+      MATERIAL: "CHEST"
+      DATA: 0
+  EQUIPPED:
+    ICON:
+      DISPLAYNAME: "%OUTFIT_DISPLAYNAME%"
+      DESCRIPTION:
+        - "&7Right Click to un-equip."
+      MATERIAL: "%OUTFIT_MATERIAL%"
+      DATA: 0
+  NO_EQUIPPED:
+    ICON:
+      DISPLAYNAME: "&9&l%OUTFIT_PART%"
+      DESCRIPTION:
+        - "&7Click to browse %OUTFIT_PART%s."
+      MATERIAL: "REDSTONE"
+      DATA: 0
+  REMOVE:
+    ICON:
+      DISPLAYNAME: "&c&lRemove"
+      DESCRIPTION:
+        - "&cClick here to remove"
+        - "&cyour active outfit."
+      MATERIAL: "REDSTONE"
+      DATA: 0

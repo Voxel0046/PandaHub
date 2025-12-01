@@ -1,0 +1,16 @@
+EXAMPLE:
+  ENABLE: false
+  ICON:
+    HEAD:
+      ENABLE: false
+      PLAYER: ""
+      CUSTOM: ""
+    GLOW: true
+    DISPLAYNAME: "&9&lExample &7(Right Click)"
+    DESCRIPTION: []
+    MATERIAL: "FEATHER"
+    DATA: 0
+    SLOT: 4
+    AMOUNT: 1
+  COMMANDS:
+    - "[PLAYER] fly"

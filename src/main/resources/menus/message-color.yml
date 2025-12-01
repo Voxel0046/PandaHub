@@ -1,0 +1,43 @@
+MENU:
+  TITLE: "Message Colors"
+
+BUTTONS:
+  MESSAGE_COLOR:
+    ALLOWED:
+      ICON:
+        DISPLAYNAME: "%MESSAGE_COLOR_DISPLAYNAME% Color"
+        DESCRIPTION:
+          - "&7Enhance your messages with colors."
+          - " "
+          - "&9You own this!"
+          - "&fEquipped: &cNo"
+          - " "
+          - "&aClick to equip."
+    DENIED:
+      ICON:
+        DISPLAYNAME: "%MESSAGE_COLOR_DISPLAYNAME% Color"
+        DESCRIPTION:
+          - "&7Enhance your messages with colors."
+          - " "
+          - "&9You don't own this!"
+          - "&fEquipped: &cNo"
+          - " "
+          - "&cNo permission."
+    EQUIPPED:
+      ICON:
+        DISPLAYNAME: "%MESSAGE_COLOR_DISPLAYNAME% Color"
+        DESCRIPTION:
+          - "&7Enhance your messages with colors."
+          - " "
+          - "&9You own this!"
+          - "&fEquipped: &aYes"
+          - " "
+          - "&aCurrently equipped."
+  REMOVE:
+    ICON:
+      DISPLAYNAME: "&c&lRemove"
+      DESCRIPTION:
+        - "&cClick here to remove"
+        - "&cyour active message-color."
+      MATERIAL: "REDSTONE"
+      DATA: 0

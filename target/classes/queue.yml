@@ -1,0 +1,28 @@
+QUEUE:
+  DELAY: 5
+  POSITION_INTERVAL: 20
+  SERVERS:
+    - 'practice-eu'
+    - 'practice-na'
+    - 'practice-as'
+    - 'potsg'
+    - 'prison'
+  PRIORITY:
+    default: 10
+
+QUEUE_JOIN: "&aYou've joined the queue for &a&l%QUEUE_NAME%&r&a."
+QUEUE_LEAVE: "&aYou've leave the queue for &a&l%QUEUE_NAME%&r&a."
+QUEUE_POSITION:
+  - " "
+  - " &9&lQueue"
+  - " &9┃ &fPosition: &9%QUEUE_NAME%"
+  - " &9┃ &fServer: &9#%QUEUE_POSITION%/%QUEUE_SIZE%"
+  - " "
+  - " &cTo get higher priority in queues"
+  - " &cpurchase a rank at @ &e%STORE%&c."
+  - " "
+QUEUE_SEND: "&aSending you to %QUEUE_NAME%."
+QUEUE_NOT_IN: "&cYou're not in a queue."
+QUEUE_PAUSED: "&c%QUEUE_NAME% has been paused."
+QUEUE_UNPAUSED: "&a%QUEUE_NAME% has been unpaused."
+QUEUE_NOT_FOUND: "&cQueue '%QUEUE_NAME%' not found."
