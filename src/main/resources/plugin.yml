@@ -1,3 +1,4 @@
 main: dev.panda.hub.PandaHub
 name: Hub
 version: ${project.version}
+softdepend: [ ajParkour ]

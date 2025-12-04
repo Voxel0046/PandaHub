@@ -1,5 +1,7 @@
 package dev.panda.hub.module;
 
+import dev.panda.hub.hooks.AJParkourHook;
+import dev.panda.hub.hooks.ApolloHook;
 import dev.panda.hub.module.impl.*;
 import dev.panda.hub.providers.nametag.ApolloTask;
 import dev.panda.hub.providers.scoreboard.ScoreboardHook;
@@ -31,16 +33,20 @@ public class ModuleService {
     }
 
     public void start(PandaHub plugin) {
+        PlaceholderAPIHook.init();
+        ApolloHook.init();
+        AJParkourHook.init();
+
         for (Module module : getModules()) {
             module.onEnable(plugin);
         }
 
-        PlaceholderAPIHook.init();
         ScoreboardHook.init(plugin);
         TablistHook.init(plugin);
 
-        // i'll jus put this here
-        new ApolloTask().runTaskTimerAsynchronously(PandaHub.get(), 0L, 10L);
+        if (ApolloHook.isApollo()) {
+            new ApolloTask().runTaskTimerAsynchronously(PandaHub.get(), 0L, 10L);
+        }
 
         Bukkit.getMessenger().registerOutgoingPluginChannel(plugin, "BungeeCord");
     }

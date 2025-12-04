@@ -3,6 +3,7 @@ package dev.panda.hub.listeners;
 import dev.panda.hub.PandaHub;
 import dev.panda.hub.commons.hotbar.Hotbar;
 import dev.panda.hub.commons.hotbar.HotbarManager;
+import dev.panda.hub.hooks.AJParkourHook;
 import dev.panda.hub.profile.Profile;
 import dev.panda.hub.profile.ProfileManager;
 import dev.panda.hub.services.impl.ConfigService;
@@ -10,11 +11,8 @@ import dev.panda.hub.services.impl.LangService;
 import dev.panda.hub.utilities.ChatUtil;
 import dev.panda.hub.utilities.compatibility.effect.EffectUtil;
 import dev.panda.hub.utilities.compatibility.sound.SoundUtil;
-import net.minecraft.server.v1_8_R3.IChatBaseComponent;
-import net.minecraft.server.v1_8_R3.PacketPlayOutTitle;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
-import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -26,6 +24,7 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.*;
 import org.bukkit.inventory.ItemStack;
+import us.ajg0702.parkour.api.AjPakour;
 
 public class PlayerListener implements Listener {
 
@@ -257,7 +256,7 @@ public class PlayerListener implements Listener {
 		Player player = event.getPlayer();
 		Profile profile = profileManager.getProfile(player.getUniqueId());
 
-		if (profile.isPvpMode()) {
+		if (profile.isPvpMode() || (AJParkourHook.isAjParkour() && AjPakour.playerInParkour(player))) {
 			if (ConfigService.DOUBLE_JUMP_ENABLE) {
 				player.setAllowFlight(false);
 			}

@@ -172,6 +172,13 @@
             <version>LATEST</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>groupId</groupId>
+            <artifactId>ajParkour</artifactId>
+            <version>2.12.10</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/ajParkour-2.12.10.jar</systemPath>
+        </dependency>
         <!--  Apollo API  -->
         <dependency>
             <groupId>com.lunarclient</groupId>

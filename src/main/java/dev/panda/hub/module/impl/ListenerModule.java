@@ -1,12 +1,12 @@
 package dev.panda.hub.module.impl;
 
+import dev.panda.hub.hooks.AJParkourHook;
 import dev.panda.hub.listeners.*;
 import dev.panda.hub.services.impl.ConfigService;
 import dev.panda.hub.utilities.menu.ButtonListener;
 import dev.panda.hub.PandaHub;
 import dev.panda.hub.module.Module;
 import dev.panda.hub.profile.ProfileListener;
-import dev.panda.hub.listeners.*;
 
 public class ListenerModule extends Module {
 
@@ -31,5 +31,7 @@ public class ListenerModule extends Module {
         new SkullListener(plugin);
         new OutfitListener(plugin);
         new CommunicationListener(plugin);
+
+        if (AJParkourHook.isAjParkour()) new ParkourFixListener(plugin);
     }
 }
