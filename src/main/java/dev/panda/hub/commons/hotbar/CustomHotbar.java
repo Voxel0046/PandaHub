@@ -14,6 +14,7 @@ public class CustomHotbar {
     private ItemStack item;
     private int slot;
     private boolean head;
+    private String playerHead; // for %player% heads
     private List<String> commands;
 
     public CustomHotbar(String name) {

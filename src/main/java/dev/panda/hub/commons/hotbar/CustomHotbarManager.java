@@ -56,6 +56,9 @@ public class CustomHotbarManager {
                             section.getString(customHotbarName + ".ICON.DISPLAYNAME"),
                             section.getStringList(customHotbarName + ".ICON.DESCRIPTION")
                     );
+
+                    // added for %player% heads
+                    customHotbar.setPlayerHead(section.getString(customHotbarName + ".ICON.HEAD.PLAYER"));
                 }
                 else {
                     itemStack = new ItemBuilder(section.getString(customHotbarName + ".ICON.MATERIAL"))
@@ -85,12 +88,38 @@ public class CustomHotbarManager {
     }
 
     public CustomHotbar getCustomHotbar(ItemStack itemStack) {
-        return customHotbars.get(itemStack);
+        // original
+        CustomHotbar direct = customHotbars.get(itemStack);
+        if (direct != null) return direct;
+
+        // special cases (like our %player% head)
+        if (itemStack == null || !itemStack.hasItemMeta() || !itemStack.getItemMeta().hasDisplayName()) return null;
+        String displayName = itemStack.getItemMeta().getDisplayName();
+
+        for (CustomHotbar hotbar : customHotbars.values()) {
+            ItemStack item = hotbar.getItem();
+
+            if (!item.getItemMeta().hasDisplayName()) continue;
+            if (!displayName.equalsIgnoreCase(item.getItemMeta().getDisplayName())) continue;
+
+            return hotbar;
+        }
+
+        return null;
     }
 
     public void setCustomHotbar(Player player) {
         for (CustomHotbar customHotbar : customHotbars.values()) {
             if (customHotbar.isEnable()) {
+                // special case for %player% heads (kinda hacky)
+                if (customHotbar.isHead() && "%player%".equalsIgnoreCase(customHotbar.getPlayerHead())) {
+                    ItemStack oldHead = customHotbar.getItem().clone();
+                    ItemStack newHead = ItemBuilder.createSkull(player.getName(), oldHead.getItemMeta().getDisplayName(), oldHead.getItemMeta().getLore());
+
+                    player.getInventory().setItem(customHotbar.getSlot() - 1, newHead);
+                    continue;
+                }
+
                 player.getInventory().setItem(customHotbar.getSlot() - 1, customHotbar.getItem());
             }
         }
